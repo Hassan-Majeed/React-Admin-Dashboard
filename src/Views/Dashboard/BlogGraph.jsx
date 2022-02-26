@@ -8,8 +8,8 @@ import {
 } from "@material-ui/core";
 import { blue, red } from "@material-ui/core/colors";
 import React, { useEffect, useState } from "react";
-import { fakeArrayGenrator } from "../../../Common/fakeDataGenetator";
-import { lineGraphComponent } from "../../../Common/GraphComponent";
+import { fakeArrayGenrator } from "../../Common/fakeDataGenetator";
+import { lineGraphComponent } from "../../Common/GraphComponent";
 import { useStyles } from "../BodyStyles";
 
 export default function BlogGraph() {

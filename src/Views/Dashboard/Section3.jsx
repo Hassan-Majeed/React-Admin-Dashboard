@@ -15,7 +15,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { useStyles } from "../BodyStyles";
-import { GetPosts, GetUsers } from "../../../Common/requestApi";
+import { GetPosts, GetUsers } from "../../Common/requestApi";
 
 export default function Section3() {
   const classes = useStyles();

@@ -4,11 +4,12 @@ import {
   List,
   ListItem,
   ListItemIcon,
-  ListItemText,
+  ListItemText
 } from "@material-ui/core";
+import FaTable from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { useStyles } from "./HeaderStyle";
-
+import { FaUserAlt } from "react-icons/fa";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import BookIcon from "@material-ui/icons/Book";
 import PostAddIcon from "@material-ui/icons/PostAdd";
@@ -18,31 +19,49 @@ import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 export default function SidenavData({ handleDrawerClose }) {
   const classes = useStyles();
   const listItemData = [
-    { label: "Dashboard", link: "/", icon: <DashboardIcon /> },
-    { label: "Blog Post", link: "/blog", icon: <BookIcon /> },
-    { label: "Link 1", link: "/link1", icon: <PostAddIcon /> },
+    {
+      label: "Dashboard",
+      link: "/dashboard",
+      icon: <DashboardIcon />
+    }, 
+    {
+      label: "Link 1",
+      link: "/link1",
+      icon: <PostAddIcon />
+    },
     {
       label: "Notification",
       link: "/notification",
-      icon: <NotificationsActiveIcon />,
+      icon: <NotificationsActiveIcon />
     },
-    { label: "logout", link: "/logout", icon: <ExitToAppIcon /> },
+    {
+      label: "User",
+      link: "/user",
+      icon: <FaUserAlt />
+    },
+    {
+      label: "logout",
+      link: "/",
+      icon: <ExitToAppIcon />
+    }
   ];
 
   return (
     <List>
       {listItemData.map((item, i) => (
         <Button
-          size='small'
+          size="small"
           onClick={() => handleDrawerClose()}
-          className={classes.navButton}>
+          className={classes.navButton}
+        >
           <ListItem
             exact
             key={i}
             component={NavLink}
             to={item.link}
             className={classes.navlink}
-            activeClassName={classes.selectedNav}>
+            activeClassName={classes.selectedNav}
+          >
             <ListItemIcon>{item.icon}</ListItemIcon>
             <ListItemText>{item.label}</ListItemText>
           </ListItem>

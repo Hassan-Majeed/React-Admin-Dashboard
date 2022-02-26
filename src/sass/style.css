@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-heading {
+  font-size: 40px;
+  color: #15191c;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.secondary-heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.left-side {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.left-side .registration-inp-box label {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+
+.main-btn {
+  outline: none;
+  border: none;
+  background-color: #d7a93f;
+  color: #ffffff;
+  padding: 15px 50px;
+  border-radius: 99px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main-btn:hover {
+  background-color: #dbaa37;
+  color: #f3ebeb;
+}
+
+.right-side {
+  background-image: url("../images/adminbg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  background-position: center;
+}
+
+.primary-inputs {
+  padding: 20px;
+  outline: none;
+  border: 1px solid #c6c6c7;
+  border-radius: 10px;
+  color: #1e1e1e;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.primiry-link {
+  color: #d7a93f !important;
+}
+
+.input-type-code {
+  width: 100%;
+  height: 125px;
+  margin-right: 10px;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid #f8ae00;
+  font-size: 80px;
+  color: #d7a93f;
+  text-align: center;
+}
+
+.input-type-code::-webkit-input-placeholder {
+  color: #f8ae00;
+}
+
+.input-type-code:-ms-input-placeholder {
+  color: #f8ae00;
+}
+
+.input-type-code::-ms-input-placeholder {
+  color: #f8ae00;
+}
+
+.input-type-code::placeholder {
+  color: #f8ae00;
+}
+
+.show-password {
+  right: 20px;
+  top: 10px;
+  font-size: 25px;
+  color: #707070;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+section.authentication-wrapper {
+  overflow-x: hidden;
+}
+
+.dashboard-inputs {
+  padding: 15px 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 99px;
+  background-color: #d8d8d86e;
+  color: black;
+}
+
+.primary-input-icon {
+  right: 15px;
+  top: 17px;
+  font-size: 20px;
+}
+
+.dashboard-input-box {
+  max-width: 326px !important;
+}
+
+.MuiAppBar-colorPrimary {
+  color: #fff !important;
+  background-color: #dbaa37 !important;
+}
+
+.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.MuiPaper-elevation0 {
+  background-color: #dbaa37 !important;
+  color: white !important;
+}
+
+img.header-logo {
+  width: 200px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 2px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 45px;
+  padding: 60px;
+  margin: 45px 30px;
+}
+
+.section-heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  color: #15191c;
+  text-transform: capitalize;
+}
+
+.back {
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.dashboard-anatlytics {
+  border: 1px solid #d7a93f;
+  padding: 30px 25px;
+  border-radius: 10px;
+}
+
+.dashboard-anatlytics h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dashboard-anatlytics h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dashboard-anatlytics span {
+  border: 1px solid #dbaa37;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: #d7a93f;
+}
+
+.dashboard-anatlytics span .icons {
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .dashboard-anatlytics {
+    min-height: 205px;
+  }
+  .dashboard-anatlytics h3 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .box {
+    border-radius: 15px;
+    padding: 25px;
+    margin: 40px 0px;
+  }
+  .dashboard-inputs {
+    width: 100%;
+  }
+  .input-type-code {
+    height: 80px;
+    font-size: 50px;
+  }
+  .left-side {
+    padding: 25px;
+  }
+  .section-heading {
+    font-size: 30px;
+  }
+  .dashboard-anatlytics {
+    min-height: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

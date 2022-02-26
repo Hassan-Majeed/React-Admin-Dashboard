@@ -1,15 +1,7 @@
-import { BrowserRouter } from "react-router-dom";
-import "./App.css";
-import Footer from "./Components/Footer";
-import HearderComponent from "./Components/Header/HearderComponent";
-
+import "../src/sass/style.css"; 
+import Routes from "./Routes";
 function App() {
-  return (
-    <BrowserRouter>
-      <HearderComponent />;
-      <Footer />
-    </BrowserRouter>
-  );
+  return <Routes />;
 }
 
 export default App;
