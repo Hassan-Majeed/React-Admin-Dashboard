@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 
 import { useStyles } from "../HeaderStyle";
-import image from "./unnamed.jpg";
+import Avatar from "../../../images/adminAvatar.png";
 import SettingsIcon from "@material-ui/icons/Settings";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
@@ -40,7 +40,7 @@ export default function Profile() {
         onClick={handleClick}
         color='inherit'>
         <Badge badgeContent={null} color='secondary'>
-          <img alt={image} src={image} className={classes.navImg} />
+          <img alt="admin" src={Avatar} className={classes.navImg} />
         </Badge>
       </IconButton>
       <Menu

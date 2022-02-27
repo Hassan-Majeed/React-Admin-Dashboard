@@ -1,11 +1,9 @@
 import React from "react";
 import {
   AppBar,
-  Box,
-  Hidden,
+  Box, 
   IconButton,
-  Toolbar,
-  Typography
+  Toolbar, 
 } from "@material-ui/core";
 import { useStyles } from "./HeaderStyle";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
@@ -22,20 +20,16 @@ export default function NavbarComponent({ handleDrawerToggle }) {
     <AppBar>
       <Toolbar className={classes.toolbar}>
         <Box style={{ display: "flex" }}>
-           <img src={logo} alt="logo" className="header-logo img-fluid" />
-        </Box>
-        <Hidden smDown>
-          <Box>
-            <Notification />
-            <Messages />
-            <Profile />
-          </Box>
-        </Hidden>
-        <Hidden mdUp>
+          <img src={logo} alt="logo" className="header-logo img-fluid" />
+        </Box> 
+        <Box>
+          <Notification />
+          <Messages />
+          <Profile />
           <IconButton color="inherit" onClick={handleDrawerToggle}>
             <MenuRoundedIcon />
           </IconButton>
-        </Hidden>
+        </Box> 
       </Toolbar>
     </AppBar>
   );

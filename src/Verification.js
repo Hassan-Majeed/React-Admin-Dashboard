@@ -1,5 +1,4 @@
-import React from "react";
-import { FaSearch, FaArrowLeft } from "react-icons/fa";
+import React from "react"; 
 import { Row, Col } from "react-bootstrap";
 import logo from "../src/images/logo.png"
 const Verification = () => {

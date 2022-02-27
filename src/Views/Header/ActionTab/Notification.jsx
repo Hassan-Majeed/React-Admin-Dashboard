@@ -49,7 +49,8 @@ export default function Notification() {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
-        placement='bottom-start'>
+        placement='bottom-start'
+      >
         <List dense={true} className={classes.dropdownlist}>
           {dropDownData.map((item, i) => (
             <ListItem

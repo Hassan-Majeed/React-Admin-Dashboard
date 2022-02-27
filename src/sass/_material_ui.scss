@@ -1,0 +1,28 @@
+.MuiDrawer-paper {
+  top: 64px !important;
+}
+.MuiAppBar-colorPrimary {
+  color: #fff !important;
+  background-color: $base-color !important;
+}
+.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.MuiPaper-elevation0 {
+  background-color: $base-color !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+.MuiPaper-root {
+  background-color: #dbaa37 !important;
+}
+.MuiBackdrop-root {
+  background-color: transparent !important;
+}
+.MuiPaper-elevation16 {
+  box-shadow: none !important;
+}
+.makeStyles-drawerPaper-37,
+.makeStyles-drawerPaper-8 {
+  margin-top: 0 !important;
+}
+.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+  top: 65px !important;
+}

@@ -1,24 +1,37 @@
 import React from "react";
 import TableComponent from "../Components/TableComponent";
-import { FaSearch, FaArrowLeft } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import { Row, Col } from "react-bootstrap";
+import GoBack from "../Components/GoBack";
 const HeadererData = [
   {
     tilteId: "S.No.",
     tilte: "	User",
     tilteEmail: "	Email",
-    titleusername: "	Registration"
+    titleusername: "	Registration",
   }
 ];
 const Data = [
   {
-    id: "01",
+    sNo: 1,
     name: "Hassan",
     email: "abc@gmail.com",
     username: "Abc235"
   },
   {
-    id: "02",
+    sNo: 2,
+    name: "Hassan",
+    email: "abc@gmail.com",
+    username: "Abc235"
+  },
+  {
+    sNo: 3,
+    name: "Hassan",
+    email: "abc@gmail.com",
+    username: "Abc235"
+  },
+  {
+    sNo: 4,
     name: "Hassan",
     email: "abc@gmail.com",
     username: "Abc235"
@@ -30,8 +43,8 @@ function users() {
     <>
       <div className="box">
         <div className="d-flex align-items-center mb-5">
-          <FaArrowLeft className="back" />
-          <h4 className="section-heading mb-0">User </h4>
+          <GoBack />
+          <h4 className="section-heading mb-0">User</h4>
         </div>
         <Row>
           <Col className="mb-5">

@@ -3,11 +3,11 @@ import { Box } from "@material-ui/core";
 import { Route, Switch } from "react-router-dom";
 import { useStyles } from "./HeaderStyle";
 import NavbarComponent from "./NavbarComponent";
-import Sidenav from "./Sidenav";
-import Notification from "./ActionTab/Notification";
+import Sidenav from "./Sidenav"; 
 import Dashboard from "../Dashboard/Dashboard";
-import Link1 from "../Link1";
+import Feedbacks from "../Feedbacks";
 import Users from "../Users";  
+import Notifications from "../Notifications";  
 export default function HearderComponent() {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -31,9 +31,9 @@ export default function HearderComponent() {
       <Box className={classes.wrapper}>
         <Switch>
           <Route exact path="/dashboard" render={() => <Dashboard />} />
-          <Route exact path="/link1" render={() => <Link1 />} />
+          <Route exact path="/feedbacks" render={() => <Feedbacks />} />
           <Route exact path="/user" render={() => <Users />} />
-          <Route exact path="/notification" render={() => <Notification />} />
+          <Route exact path="/notifications" render={() => <Notifications />} />
         </Switch>
       </Box>
     </Fragment>

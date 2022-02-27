@@ -1,3 +1,4 @@
+@import "variables";
 body {
   margin: 0;
   padding: 0;
@@ -5,124 +6,34 @@ body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
-
 //  ****************************
 //        Typography
 // *****************************
-
-.primary-heading {
-  font-size: 40px;
-  color: #15191c;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.secondary-heading {
-  font-family: "Open Sans", sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-  text-transform: capitalize;
-}
-
+@import "typography";
 //  ****************************
 //  Dashboard Registration Pages
 // *****************************
-
-.left-side {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 50px;
-  .registration-inp-box {
-    label {
-      font-size: 20px;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 800;
-    }
-  }
-}
-.main-btn {
-  outline: none;
-  border: none;
-  background-color: #d7a93f;
-  color: #ffffff;
-  padding: 15px 50px;
-  border-radius: 99px;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  &:hover {
-    background-color: #dbaa37;
-    color: #f3ebeb;
-  }
-}
-.right-side {
-  background-image: url("../images/adminbg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100vh;
-  background-position: center;
-}
-
-.primary-inputs {
-  padding: 20px;
-  outline: none;
-  border: 1px solid #c6c6c7;
-  border-radius: 10px;
-  color: #1e1e1e;
-}
-a {
-  text-decoration: none !important;
-  color: black !important;
-  &:hover {
-    text-decoration: none !important;
-    color: black !important;
-  }
-}
-.primiry-link {
-  color: #d7a93f !important;
-}
-.input-type-code {
-  width: 100%;
-  height: 125px;
-  margin-right: 10px;
-  outline: none;
-  border-radius: 15px;
-  border: 1px solid #f8ae00;
-  font-size: 80px;
-  color: #d7a93f;
-  text-align: center;
-  &::placeholder {
-    color: #f8ae00;
-  }
-}
-.show-password {
-  right: 20px;
-  top: 10px;
-  font-size: 25px;
-  color: #707070;
-  background: transparent;
-  outline: none;
-  border: none;
-}
-section.authentication-wrapper {
-  overflow-x: hidden;
-}
+@import "authentication";
 //  ****************************
 //    Dashboard Inputs
 // *****************************
-
 .dashboard-inputs {
-  padding: 15px 20px;
-  border: 1px solid #f1f1f1;
-  border-radius: 99px;
-  background-color: #d8d8d86e;
-  color: black;
+  padding: 15px 20px !important;
+  border: 1px solid #f1f1f1 !important;
+  border-radius: 99px !important;
+  background-color: $light-gary !important;
+  color: black !important;
+  height: auto !important;
+  &:focus {
+    outline: none !important;
+  }
 }
 
 .primary-input-icon {
   right: 15px;
   top: 17px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .dashboard-input-box {
@@ -132,15 +43,8 @@ section.authentication-wrapper {
 //  ****************************
 //   Dashboard General Styles
 // *****************************
+@import "material_ui";
 
-.MuiAppBar-colorPrimary {
-  color: #fff !important;
-  background-color: #dbaa37 !important;
-}
-.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.MuiPaper-elevation0 {
-  background-color: #dbaa37 !important;
-  color: white !important;
-}
 img.header-logo {
   width: 200px;
   height: 60px;
@@ -164,9 +68,10 @@ img.header-logo {
   font-size: 30px;
   margin-bottom: 0;
   margin-right: 10px;
+  cursor: pointer;
 }
 .dashboard-anatlytics {
-  border: 1px solid #d7a93f;
+  border: 1px solid $base-color;
   padding: 30px 25px;
   border-radius: 10px;
   h3 {
@@ -184,50 +89,95 @@ img.header-logo {
     text-transform: uppercase;
   }
   span {
-    border: 1px solid #dbaa37;
+    border: 1px solid $base-color;
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: #d7a93f;
+    color: $base-color;
     .icons {
       font-size: 26px;
     }
   }
 }
+.charts-wrap {
+  img {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.react-bootstrap-table {
+  overflow-x: scroll !important;
+  margin-bottom: 25px;
+}
+.react-bootstrap-table table {
+  table-layout: auto !important;
+}
+
+tr {
+  border: 1px solid #dfdfdf !important;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: none !important;
+  padding: 1.5rem 2rem !important;
+}
+.page-link {
+  padding: 20px 20px !important;
+}
+
+.notification-bell {
+  width: 70px;
+  height: 60px;
+  background-color: #dbaa37;
+  color: white;
+  font-size: 35px;
+  border-radius: 50%;
+  flex: 0 0 60px;
+}
+.notification-text {
+  p {
+    font-family: $OpenSans;
+    font-size: 20px;
+    color: #666666;
+    font-weight: 300;
+  }
+  .date {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $poppins;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.rotate {
+  -webkit-animation: rotate 1.5s alternate infinite;
+  animation: rotate 1.5s alternate infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    transition: 0.5s cubic-bezier(1, 0.99, 0.04, 0.04);
+  }
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+  }
+}
+
+//  ****************************
+//       Pagination Scss       //
+//  ****************************
+@import "pagination";
 //  ****************************
 //          Media Queries
 // *****************************
-@media only screen and (max-width: 1366px) {
-  .dashboard-anatlytics {
-    min-height: 205px;
-    h3 {
-      font-size: 25px;
-    }
-  }
-}
-@media only screen and (max-width: 576px) {
-  .box {
-    border-radius: 15px;
-    padding: 25px;
-    margin: 40px 0px;
-  }
-  .dashboard-inputs {
-    width: 100%;
-  }
-  .input-type-code {
-    height: 80px;
-    font-size: 50px;
-  }
-  .left-side {
-    padding: 25px;
-  }
-  .section-heading {
-    font-size: 30px;
-  }
-  .dashboard-anatlytics {
-    min-height: auto;
-  }
-}
+@import "media-queries";

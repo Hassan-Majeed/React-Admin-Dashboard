@@ -24,7 +24,7 @@ export default function TableComponent(props) {
             return (
               <>
                 <tr key={index}>
-                  <td>{item.id ? index.id : "-"}</td>
+                  <td>{item.sNo ? item.sNo : "-"}</td>
                   <td>{item.name ? item.name : "-"}</td>
                   <td>{item.email ? item.email : "-"}</td>
                   <td>{item.username ? item.username : "-"}</td>

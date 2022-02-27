@@ -5,13 +5,11 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText
-} from "@material-ui/core";
-import FaTable from "react-icons/fa";
+} from "@material-ui/core"; 
 import { NavLink } from "react-router-dom";
 import { useStyles } from "./HeaderStyle";
 import { FaUserAlt } from "react-icons/fa";
-import DashboardIcon from "@material-ui/icons/Dashboard";
-import BookIcon from "@material-ui/icons/Book";
+import DashboardIcon from "@material-ui/icons/Dashboard"; 
 import PostAddIcon from "@material-ui/icons/PostAdd";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
@@ -25,13 +23,13 @@ export default function SidenavData({ handleDrawerClose }) {
       icon: <DashboardIcon />
     }, 
     {
-      label: "Link 1",
-      link: "/link1",
+      label: "Feedbacks",
+      link: "/feedbacks",
       icon: <PostAddIcon />
     },
     {
       label: "Notification",
-      link: "/notification",
+      link: "/notifications",
       icon: <NotificationsActiveIcon />
     },
     {
@@ -48,7 +46,7 @@ export default function SidenavData({ handleDrawerClose }) {
 
   return (
     <List>
-      {listItemData.map((item, i) => (
+      {listItemData.map((item, index) => (
         <Button
           size="small"
           onClick={() => handleDrawerClose()}
@@ -56,7 +54,7 @@ export default function SidenavData({ handleDrawerClose }) {
         >
           <ListItem
             exact
-            key={i}
+            key={index}
             component={NavLink}
             to={item.link}
             className={classes.navlink}
